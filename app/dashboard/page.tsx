@@ -7,13 +7,7 @@ import TodoList from "@/components/TodoList";
 import type { WithAuthenticatorProps } from "@aws-amplify/ui-react";
 
 function App({ signOut, user }: WithAuthenticatorProps) {
-  return (
-    <div>
-      <h1>Welcome, {user?.username}</h1>
-      <button onClick={signOut}>Sign out</button>
-      <TodoList />
-    </div>
-  );
+  return <div></div>;
 }
 
 export default withAuthenticator(App);
